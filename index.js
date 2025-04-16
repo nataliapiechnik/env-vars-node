@@ -18,7 +18,7 @@ const envVariables = {
 
 // Funkcja odczytująca i wypisująca zmienne środowiskowe
 function printEnvVariables(prefix, variables) {
-  console.log(`\n### Zmienne środowiskowe z prefiksem ${prefix} ###\n`);
+  console.log(` Zmienne środowiskowe z prefiksem ${prefix} ###\n`);
   for (const [key, envVar] of Object.entries(variables)) {
     console.log(
       `${prefix + envVar}: ${process.env[prefix + envVar] || "Nie ustawiona"}`
